@@ -57,7 +57,7 @@ export default {
     copy() {
       const el = document.getElementById("render");
 
-      let range = document.c reateRange();
+      let range = document.getRangeAt();
       range.selectNode(el);
       window.getSelection().removeAllRanges();
       window.getSelection().addRange(range);
